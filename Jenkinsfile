@@ -1,10 +1,8 @@
 stage 'CI'
 node (){
 
-    // checkout scm know what repository to checkout, this configuration is specified in the pipeline setup
-    checkout scm
-    //git branch: 'jenkins2-course', 
-    //    url: 'https://github.com/g0t4/solitaire-systemjs-course'
+    git branch: 'jenkins2-course', 
+        url: 'https://github.com/g0t4/solitaire-systemjs-course'
 
     // pull dependencies from npm
     // on windows use: bat 'npm install'
